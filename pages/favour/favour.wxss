@@ -1,0 +1,132 @@
+/* pages/favour/favour.wxss */
+page {
+  background: rgb(249, 249, 249);
+}
+.container {
+   position: fixed;
+   top: 0;
+   z-index: 3; 
+   height: 42px;
+} 
+.container .zan-tab__item {
+  min-width: 40px !important;
+}
+.container .zan-tab__title {
+  font-size: 11px !important;
+  height: 42px !important;
+}
+.new-body {
+   position: absolute;
+}
+.swiper-search {
+  margin-top: 42px;
+  height: 150px;
+  position: relative;
+  width: 100%;
+}
+.swiper {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.search {
+  position: absolute; 
+  z-index:2;
+  width: 80%; 
+  margin-top: 15px;
+  margin-left: 10%;
+}
+.weui-search-bar {
+  padding: 0 !important;
+  background-color: transparent !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important; 
+}
+.weui-search-bar__form {
+  border-radius: 200px !important;
+}
+.menu {
+  margin-top: 10px;
+  height: 74px;
+  width: 100%;
+}
+.section__title {
+  font-size: 11px;
+  text-align: center;
+  width: 50px;
+  color: #666;
+}
+.section__image {
+  width: 50px;
+  height: 50px;
+}
+.section__ctn {
+  float:left;
+  width: 25%;
+}
+.image-title {
+   margin-left: 15px; 
+}
+.tab-menu {
+  margin-top: 5px;
+  width: 100%;
+}
+.tab-menu .zan-tab__title {
+  border-bottom: 0px !important;
+  font-size: 11px !important;
+}
+.tab-menu .zan-tab__bd {
+  border-top: 20rpx solid #e5e5e5 !important;
+  border-bottom: 0 !important;
+  background-color: rgb(249, 249, 249);
+}
+.card {
+  border-top: 20rpx solid #e5e5e5 !important;
+  background-color: rgb(249, 249, 249) !important;
+  font-size: 11px;
+  color: #666;
+}
+.zan-card {
+  padding: 3px 3px !important;
+}
+.searchbar-result{
+  margin-top: 0;
+  font-size: 14px;
+}
+.searchbar-result:before{
+  display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.slide-image {
+  width: 100%;
+}
+.product-image {
+  width: 78px;
+  height: 78px;
+}
+.line {
+  width: 2px;
+  height: 79px;
+  margin-left: 2px;
+  border-left: 1px rgb(229, 229, 229) dotted;
+}
+.content {
+  margin-left: 4px;
+}
+.content .zan-card__detail-row{
+  margin-bottom: 0px;
+}
+.coupon {
+  margin-top: 10px;
+}
+.coupon-price {
+  font-size: 20px
+}
+.coupon-price, .coupon-text, .coupon-info {
+  text-align: center;
+}
+.coupon-info {
+  color: red;
+}

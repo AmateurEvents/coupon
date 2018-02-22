@@ -1,0 +1,8 @@
+<!--pages/explain/explain.wxml-->
+<view class="page">
+    <view class="page__bd">
+    <view>
+      <image class="show" src="../../images/chaquan.jpg"></image>
+    </view>
+  </view>
+</view>

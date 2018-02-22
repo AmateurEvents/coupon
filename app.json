@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/favour/favour",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/supersearch/supersearch",
+    "pages/explain/explain"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f7f7f7",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "优惠券",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ec3e42",
+    "backgroundColor": "#f7f7f7",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/favour/favour",
+        "text": "优惠券",
+        "iconPath": "images/favour.png",
+        "selectedIconPath": "images/favour-select.png"
+      },
+      {
+        "pagePath": "pages/supersearch/supersearch",
+        "text": "超级搜索",
+        "iconPath": "images/hot.png",
+        "selectedIconPath": "images/hot-select.png"
+      }
+    ]
+  }
+}

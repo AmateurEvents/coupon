@@ -1,0 +1,35 @@
+.backgound-search {
+  height: 150px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3; 
+}
+.background {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.search {
+  position: absolute; 
+  z-index:2;
+  width: 80%; 
+  margin-top: 100px;
+  margin-left: 10%;
+}
+.weui-search-bar {
+  padding: 0 !important;
+  background-color: transparent !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important; 
+}
+.weui-search-bar__form {
+  border-radius: 200px !important;
+}
+.tech-chaojisou {
+  margin-top: 180px;
+  height: 1500px !important;
+}
+.background image {
+  height: 180px !important;
+}

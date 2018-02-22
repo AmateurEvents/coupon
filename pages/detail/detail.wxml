@@ -1,0 +1,46 @@
+<import src="/dist/dialog/index.wxml" />
+
+<view id="page-detail">
+  <image id="goods-pic" style="height:{{picWidth}}px;width:{{picWidth}}px;" src="{{couponInfo.ItemPic}}"></image>
+  <view id="good-info">
+    <!-- <view id="good-name">name{{couponInfo.ItemName}}</view> -->
+    <view class="zan-col zan-col-12">
+      <view class="goods-price-coupon">
+        <view class="zan-card__detail-row">券后价: ￥{{couponInfo.QuanHouJia}} </view>
+      </view>       
+    </view>
+     <view class="zan-col zan-col-12">
+        <view class="goods-price-number">
+             <view class="zan-card__detail-row">月销量:{{couponInfo.MonthlySales}}</view>
+          </view>
+      </view>
+    </view>
+  <view class="zan-col zan-col-24">
+    <view class="goods-name">{{couponInfo.ItemName}}</view>
+  </view>  
+  <view class="zan-card__detail-row hide">优惠券ID: {{couponInfo.CouponID}}</view>
+  <view id="get-coupon">
+    <view class="zan-col zan-col-10">
+      <view class="coupon">
+        <span class="coupon-price">￥{{couponInfo.QuanHouJia}}</span><span class="now-price">￥{{couponInfo.ItemPrice}}</span>
+      </view>
+      </view>
+      <view class="zan-col zan-col-4">
+        <view class="share-kefu">
+          <button class="zan-btn zan-btn--small" open-type="share"><image src="../../images/share.png"></image></button>
+        </view>
+      </view>
+      <view class="zan-col zan-col-4">
+      <view class="share-kefu">
+        <button class="zan-btn zan-btn--small" open-type="contact"><image src="../../images/kefu.png"></image></button>
+       </view>
+      </view>
+      <view class="zan-col zan-col-6">
+        <view class="kouling">
+            <button bindtap="getCoupon" class="zan-btn zan-btn--small zan-btn--danger">淘口令</button>
+        </view>
+      </view>
+  </view>
+</view>
+
+<template is="zan-dialog" data="{{ zanDialog }}"></template>

@@ -1,0 +1,24 @@
+<!-- <include src="../index/index.wxml"/> -->
+<import src="/dist/tab/index.wxml" />
+<view class="page">
+    <view class="page__bd">
+      <view class="background-search">
+      <view class="background">
+      <image src="../../images/chaojisou.png"></image>
+      </view>
+        <view class="search">
+            <view class="weui-search-bar">
+                <view class="weui-search-bar__form">
+                    <view class="weui-search-bar__box">
+                        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" confirm-type="搜索" bindconfirm="startSearch"/>
+                    </view>
+                </view>
+            </view>
+          </view>
+        </view>
+        <view>
+          <image class="tech-chaojisou" src="../../images/chaquan.jpg"></image>
+        </view>
+    </view>
+</view>

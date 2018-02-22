@@ -1,0 +1,72 @@
+/* pages/search/search.wxss */
+page {
+  background: rgb(249, 249, 249);
+}
+.zan-tab__title {
+  font-size: 11px !important;
+}
+.tab-menu .zan-tab__bd {
+  background-color: rgb(249, 249, 249);
+}
+.zan-tab__bd {
+  border-top: 1rpx solid #e5e5e5;
+}
+.title {
+  position: fixed;
+   top: 0;
+   z-index: 3; 
+   height: 42px;
+}
+.weui-search-bar {
+  background-color: rgb(249, 249, 249) !important; 
+  border-top: 0 !important;
+  border-bottom: 0 !important; 
+}
+.searchbar-result{
+  margin-top: 90px;
+  font-size: 14px;
+  background-color: rgb(249, 249, 249) !important; 
+}
+.searchbar-result:before{
+  display: none;
+}
+.card {
+  border-top: 1rpx solid #e5e5e5 !important;
+  background-color: rgb(249, 249, 249) !important;
+  font-size: 11px;
+  color: #666;
+}
+.zan-card {
+  padding: 3px 3px !important;
+}
+.product-image {
+  width: 78px;
+  height: 78px;
+}
+.line {
+  width: 2px;
+  height: 79px;
+  margin-left: 2px;
+  border-left: 1px rgb(229, 229, 229) dotted;
+}
+.content {
+  margin-left: 4px;
+}
+.content .zan-card__detail-row{
+  margin-bottom: 0px;
+}
+.coupon {
+  margin-top: 10px;
+}
+.coupon-price {
+  font-size: 20px
+}
+.coupon-price, .coupon-text, .coupon-info {
+  text-align: center;
+}
+.coupon-info {
+  color: red;
+}
+.zan-loadmore {
+  margin-top: 120px !important;
+}

@@ -1,0 +1,80 @@
+<import src="/dist/tab/index.wxml" />
+
+<view class="page">
+  <view class="page__bd">
+    <view class="container">
+      <template is="zan-tab" data="{{ ...cate_method, componentId: 'cate_method' }}">
+      </template>
+    </view>
+    <view class="new-body">
+      <view class="swiper-search">
+        <view class="swiper">
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+              <swiper-item>
+                <image src="{{item}}" class="slide-image" height="150" />
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+        <view class="search">
+          <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+              <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" bindtap="inputTyping" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="menu">
+        <view class="section__ctn" wx:for="{{cate_src}}" wx:for-item="item" wx:key="{{index}}">
+          <view class="image-title">
+            <image class="section__image" mode="{{item.mode}}" src="{{item.picture}}"></image>
+            <view class="section__title">{{item.text}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="tab-menu">
+        <template is="zan-tab" data="{{ ...sort_method, componentId: 'sort_method' }}">
+        </template>
+      </view>
+
+
+      <view class="zan-panel">
+
+        <navigator wx:for="{{couponList}}" wx:key="item.ItemID" url="../detail/detail" bindtap="setCouponInfo" data-index="{{index}}">
+
+          <view class="card zan-card">
+
+            <view class="zan-row">
+              <view class="zan-col zan-col-6">
+                <image class="product-image" src="{{item.ItemPic}}" mode="aspectFit"></image>
+              </view>
+              <view class="content zan-col zan-col-12">
+                <view class="zan-card__detail-row">
+                  {{item.SimpleName}}
+                </view>
+                <view class="zan-card__detail-row">
+                  <view class="zan-tag zan-tag--danger zan-tag--plain">券后价</view>￥{{item.QuanHouJia}}
+                  <view class="zan-card__detail-row">现价￥{{item.ItemPrice}} 月销量{{item.MonthlySales}}</view>
+                </view>
+              </view>
+              <view class="zan-col zan-col-1 line">
+              </view>
+              <view class="zan-col zan-col-5 coupon">
+                <view class="zan-card__detail-row coupon-price">￥{{item.Jian}}</view>
+                <view class="zan-card__detail-row coupon-text">优惠券</view>
+                <view class="zan-card__detail-row coupon-info">查看详情</view>
+              </view>
+            </view>
+
+          </view>
+
+        </navigator>
+      </view>
+
+    </view>
+  </view>
+</view>

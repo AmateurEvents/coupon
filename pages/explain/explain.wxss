@@ -1,0 +1,4 @@
+/* pages/explain/explain.wxss */
+.show {
+  height: 1500px !important;
+}
